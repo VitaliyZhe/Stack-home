@@ -8,13 +8,11 @@ public class Main {
 		double b = 21.5;
 		MyStack stack = new MyStack(10);
 		Black_list blackList = new Black_list();
-		blackList.addBlackList(new MyStack());
-
+		blackList.addBlackList(MyStack.class);
 		System.out.println("add_stack " + stack.addStack(s));
-
 		System.out.println("add_stack " + stack.addStack(i));
-
 		System.out.println();
+		//Find in Black list
 		if (!blackList.blackListIs(stack)) {
 			stack.addStack(stack);
 		}
@@ -25,7 +23,7 @@ public class Main {
 		if (!stack.isEmpty()) {
 			System.out.println("GetStack " + stack.getStackTop());
 			System.out.println("Get & DellStack " + stack.getDellStack());
-			//System.out.println("GetStack " + stack.getStack());
+			// System.out.println("GetStack " + stack.getStack());
 			System.out.println("GetStack " + stack.getStackTop());
 			System.out.println("Dellstack " + stack.dellStack());
 			System.out.println("GetStack " + stack.getStackTop());

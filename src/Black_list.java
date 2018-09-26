@@ -19,18 +19,18 @@ public class Black_list {
 	}
 
 	public boolean blackListIs(Object o) {
-		
+
 		for (Object obj : blacklist) {
 			if (obj != null) {
-				
-				if (obj.getClass()==o.getClass()) {
+
+				if (obj == o.getClass()) {
 					System.out.println();
 					System.out.println("Object in black list ");
 					return true;
 				}
-				
+
 			}
-			
+
 		}
 		return false;
 
